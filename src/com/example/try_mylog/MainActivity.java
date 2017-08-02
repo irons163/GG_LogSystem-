@@ -20,6 +20,8 @@ import org.apache.http.params.BasicHttpParams;
 import org.apache.http.params.HttpConnectionParams;
 import org.apache.http.params.HttpParams;
 
+import com.senao.debug_log.DebugLog;
+
 import android.os.Bundle;
 import android.os.Handler;
 import android.app.Activity;
@@ -35,7 +37,10 @@ public class MainActivity extends Activity {
 		setContentView(R.layout.activity_main);
 
 		DebugLog myLog2 = DebugLog.getInstance();
-		myLog2.init(getApplicationContext());
+		myLog2.init(getApplicationContext(), "12pVe4Ep3CR0l4RoUg8ah7d2Kb7Usg4MPHeN2sWV1nw0", true);
+		myLog2.setShowDebugLogToLogCat(true);
+		myLog2.setWriteLogToSdcard(true);
+		myLog2.setSendLogByNet(true);
 		DebugLog.d("ssSDds");
 		
 		new Thread(new Runnable() {
@@ -50,7 +55,7 @@ public class MainActivity extends Activity {
 						// TODO Auto-generated catch block
 						e.printStackTrace();
 					}
-				DebugLog.e("YYY");
+				DebugLog.e("GG", "YYY");
 				}
 			}
 		}).start();
@@ -187,7 +192,7 @@ public class MainActivity extends Activity {
 	protected void onDestroy() {
 		// TODO Auto-generated method stub
 		
-		MyLog2.quit();
+//		MyLog2.quit();
 		
 		super.onDestroy();
 	}

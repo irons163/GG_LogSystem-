@@ -1,4 +1,4 @@
-package com.example.try_mylog;
+package com.senao.debug_log;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -8,6 +8,7 @@ import java.io.ObjectOutputStream;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
+
 
 import android.util.Log;
 

@@ -1,4 +1,4 @@
-package com.example.try_mylog;
+package com.senao.debug_log;
 
 public class LogBean {
 	private String level;
