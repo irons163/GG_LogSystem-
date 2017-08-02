@@ -10,7 +10,7 @@ public class DebugConfig {
 
 	static String logFile = ROOT + FILE_NAME;
 	static int logUploadSize = 10; 
-	static int update = 5000; 
+	static int updateIntervalTime = 5000; 
 	
 	static boolean debugModeEnable = false;
 	static boolean showDebugLogToLogCat = true;
